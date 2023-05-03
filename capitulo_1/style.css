@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(109, 165, 147);
+    font-family: 'Agency FB';
+}
+
+.conteinerPerfil{
+    width: 50%;
+    padding: 25px 0px;
+    background-color: rgb(221, 215, 215);
+    border-radius: 30px;
+}
+
+.conteinerPerfil__imagen{
+    width: 200px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.conteinerPerfil__nombre{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.conteinerPerfil__tabla{
+    width: 90%;
+    margin: 5px auto;
+    text-align: center;
+    font-size: 16px;
+    border-collapse: collapse;
+}
+
+.conteinerPerfil__tabla thead{
+    border-bottom: .1px solid rgba(171, 171, 171, 0.466);
+}
+
+.conteinerPerfil__tabla thead tr{
+    background-color: white;
+}
+
+.conteinerPerfil__tabla thead tr th{
+    padding: 5px;
+}
+
+.conteinerPerfil__tabla tr{
+    background-color: rgb(245, 245, 245);
+}
+
+.conteinerPerfil__tabla tr td{
+    padding: 2px;
+}
+
+.conteinerPerfil__medallero .conteinerPerfil__tabla tr td{
+    width: calc(100% / 3);
+}
+
+.conteinerPerfil__records .conteinerPerfil__tabla tr td{
+    width: calc(100% / 3);
+}
+
+.conteinerPerfil__medallero h3, .conteinerPerfil__records h3{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+@media only screen and (max-width:769px){
+    .conteinerPerfil{
+        width: 80%;
+    }
+}
